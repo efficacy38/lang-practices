@@ -1,0 +1,6 @@
+---
+replicaCount: 4
+
+image:
+  repository: docker.io/nginxdemos/hello
+  tag: 0.4
