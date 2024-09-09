@@ -40,6 +40,12 @@
               inherit inputs pkgs;
               modules = [
                 {
+                  packages = with pkgs; [
+                    jsonnet-bundler
+                    yq-go
+                    json2yaml
+                  ];
+
                   languages = {
                     jsonnet.enable = true;
                   };
